@@ -4,7 +4,7 @@ void inv(int *vet, int n1, int *n2) { // receber vetor, um inteiro n1 e ponteiro
     int i;
     for (i=0; i < 5; i++)
         vet[i]=vet[i]+i; // soma os indices + i (v[0] = 3 etc...)
-    *n2 = *n2 + i; // somando ponteiro mais i -- 1+0 = 0, 1+1 = 2, 2+2 = 4 , 4+3 = 7, 7+4 = 11
+    *n2 = *n2 + i; // somando ponteiro mais i, PORÉM não está no laço for, logo i vale 5.
     n1 = n1 + 2; 
 }
 
